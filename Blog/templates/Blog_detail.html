@@ -31,26 +31,27 @@
                 </div>
             </header>
     
-                {% for post in Postingans %}
+                
                 <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-top:30px;margin-bottom:80px;">
-                <img style="display:block;margin:auto" src="../media/{{post.gambar}}">
+                <img style="display:block;margin:auto" src="../media/{{Postingans.gambar}}">
                     <div class="text-left">
                             <div id="tanggal" >
-                                    {{post.tanggal_dibuat}}
+                                    {{Postingans.tanggal_dibuat}}
                                 </div>
                                 <br>
-                        <div class="judul">{{post.judul}}</div><br>
-                        {{post.teks}}<br>
-                        <a href="{% url 'post_detail' post_id=post.id%}">Baca Selengkapnya</a>
-
-                        <br> <br><br>
+                        <div class="judul">{{Postingans.judul}}</div><br>
+                        {{Postingans.teks}} <br>
+                        
+                        <br> <br>
+                        <a href="{% url 'Blog'%}">Kembali ke Blog...</a>
+                        <br>
                     </div>
                 </div>
-                {%endfor%}
-                <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-top:30px;margin-bottom:80px;">
+
+
            
-                <a style="margin:auto;"href="{% url 'input_post_blog' %}">Tambah Postingan</a>
-            </div></div>
+           
+            </div>
     </div>
 
    

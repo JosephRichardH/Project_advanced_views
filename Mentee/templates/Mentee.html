@@ -32,40 +32,19 @@
             </header>
             <div class="judulawal">Our Mentee</div>
             <div class="container" style="margin-left:30px; margin-right:30px; padding-left: 100px; padding-right: 100px; margin-bottom:150px;">
-                    
+                {% for mentee in Mentees %}
                     <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
                             <div class="col-3">
-                        <img class="displaypicturesmall" src="{% static 'images/Deepin-Screenshot-select-area-20181009100635.png' %}">
+                        <img class="displaypicturesmall" src="../media/{{ mentee.gambar }}">
                     </div>
                     <div class="col-9"; style="margin-top:90px;text-align: left;">
-                        <h1>Steve Jobs</h1>
-                        <p> "I learnt so much from Alpha Tech."</p>
+                        <h1>{{mentee.Nama}}</h1>
+                        <p> {{mentee.quote}}</p>
                     </div>
             </div>
-
-            <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
-                    <div class="col-3">
-                <img class="displaypicturesmall" src="{% static 'images/Deepin-Screenshot-select-area-20181009100646.png' %}">
-            </div>
-            <div class="col-9"; style="margin-top:90px;text-align: left;">
-                <h1>Larry Page</h1>
-                <p> "Great place to learn about programming."</p>
-            </div>
-        </div>
+            {%endfor%}
             
-        
-        <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
-                <div class="col-3">
-            <img class="displaypicturesmall" src="{% static 'images/Deepin-Screenshot-select-area-20181009100620.png' %}">
-        </div>
-        <div class="col-9"; style="margin-top:90px;text-align: left;">
-            <h1>Mark Zuckerberg</h1>
-            <p> "The best place for those who want to be a Great IT Talent."</p>
-        </div>
-        </div>
     </div>
-
-
 
 
             <footer1>

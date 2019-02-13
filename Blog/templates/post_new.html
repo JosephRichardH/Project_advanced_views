@@ -1,7 +1,74 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Blog.css' %}" type="text/css">
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <header>
+                <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom box-shadow" style="margin-bottom:0px"> 
+                        <h3 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+                        <nav class="my-2 my-md-0 mr-md-3">
+                                <a href="{% url 'Home'%}"><li= class="listnav" style="margin-left:10px;">HOME</li=></a>
+                                <a href="{% url 'Blog'%}" id="nav-color"><li= class="listnav" style="margin-left:10px;">BLOG</li=></a>
+                                <a href="{% url 'Mentor'%}"><li= class="listnav" style="margin-left:10px;">MENTOR</li=></a>
+                                <a href="{% url 'Mentee'%}"><li= class="listnav" style="margin-left:10px;">MENTEE</li=></a>
+                                <a href="{% url 'Author'%}"><li= class="listnav" style="margin-left:10px;">AUTHOR</li=></a>
+                        </nav>  
+                </div>
+                <div class="banner">
+                    <img class="profile" src="{% static 'images/alpha-logo.png' %}">
+                    <p class="title_header">Alphatech Academy Blog</p>  
+                    <p class="content_header">
+                        Alphatech Academy is a tech talent incubator that gives everyone (even non-IT
+                        background) a chance to be a professional Tech Talent within 3 months. 
+                    </p>
+                    <p class="contact_header">Contact Person:</p>
+                    <p class="contact_header">Email: academy@alphatech.id</p>
+                    <p class="contact_header">Mobile Phone: 0877 9609 9530</p>
+                </div>
+            </header>
 
-<h2>New Post</h2>
-<form method = "POST" class="post-form">
-    {%csrf_token %}
-    {{form.as_p}}
-    <button type="submit" class="save btn bin-default">Save</button>
-</form>
+            <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-top:30px;margin-bottom:80px;">
+                <h2>New Post</h2>
+                <form method = "POST" class="post-form" action="{% url 'Blog'%}">
+                    {%csrf_token %}
+                    {{form.as_p}}
+                    <button type="button" class="btn btn-dark">Save</button>
+                </form>
+                </div>
+                
+
+
+
+<footer1>
+    <div class="bannerfooter1">
+        <div class="container" style="margin: auto">
+                <div style="text-align: center;padding-left:200px;padding-right:200px;">
+        <div class="gambar" >
+            Our Product:
+        </div>
+        <div class="gambar">
+            <img src="{% static 'images/logo-grey-alphapay.png' %}">
+        </div>
+        <div class="gambar">    
+            <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+        </div>
+        <div class="gambar">
+            <img src="{% static 'images/logo-grey-alphabill.png' %}">
+        </div>
+    </div>
+    </div>
+    
+</div>
+</footer1>
+<footer2>
+    <div class="bannerfooter2">
+        <div class="contentfooter2">Contact Person: 
+            Mobile Phone: 0877 9609 9530 
+            Email: <a href="">academy@alphatech.id</a></div> 
+    </div>
+</footer2>
+</body>
+</html>

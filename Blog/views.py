@@ -14,8 +14,11 @@ def input_post(request):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
-            return redirect(Blog)
-
+            return redirect(BlogPost)
     else:
         form = PostForm()
     return render(request, 'post_new.html', {'form': form})
+
+def post_detail(request, post_id):
+    Postingans = Blog.objects.get(pk=post_id)
+    return render(request, 'Blog_detail.html', {'Postingans':Postingans})

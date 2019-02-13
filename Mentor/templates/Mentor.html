@@ -33,40 +33,19 @@
 
             <div class="judulawal">Our Mentor</div>
             <div class="container" style="margin-left:30px; margin-right:30px; padding-left: 100px; padding-right: 100px; margin-bottom:150px;">
-                    
+                {% for mentor in Mentors %}
                     <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
                             <div class="col-3">
-                        <img class="displaypicturesmall" src="{% static 'images/people-andreas.png' %}">
+                        <img class="displaypicturesmall" src="../media/{{mentor.gambar}}">
                     </div>
                     <div class="col-9"; style="margin-top:90px;text-align: left;">
-                        <h1>Andreas Nugroho</h1>
-                        <p> Software Ninja (5 years experience)</p><br>
-                        <p> "Great place to learn about programming. Come join us!"</p>
+                        <h1>{{mentor.Nama}}</h1>
+                        <p> {{mentor.pengalaman}}</p><br>
+                        <p> {{mentor.quote}}</p>
                     </div>
             </div>
+            {%endfor%}
 
-            <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
-                    <div class="col-3">
-                <img class="displaypicturesmall" src="{% static 'images/people-ramdhan.png' %}">
-            </div>
-            <div class="col-9"; style="margin-top:90px;text-align: left;">
-                    <h1>Ramdhan Hidayat</h1>
-                    <p> Master of Chaos (10 years experience)</p><br>
-                    <p> "We make this program with passion, hard work, and heart. Let's get rock with us!"</p>
-        </div>
-        </div>
-            
-        
-        <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
-                <div class="col-3">
-            <img class="displaypicturesmall" src="{% static 'images/people-trimo.png' %}">
-        </div>
-        <div class="col-9"; style="margin-top:90px;text-align: left;">
-                <h1>Trimo Leksono</h1>
-                <p> Magician (8 years experience)</p><br>
-                <p> "The best place for who want to be a great IT Talent."</p>
-  </div>
-        </div>
     </div>
 
 
