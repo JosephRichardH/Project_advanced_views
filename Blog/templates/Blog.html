@@ -68,10 +68,28 @@
                 kita membahas lebih ....
                 <br><br><br>
                 <a href="">Baca Selengkapnya...</a>
-           </div>
+           
+                {% for post in Postingans %}
+                <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-bottom:150px;">
+                <img style="display:block;margin:auto" src="{% post.gambar.url %}">
+                    <div class="col-10 text-left">
+                            <div id="tanggal" >
+                                    {{post.tanggal_dibuat}}
+                                <div class="komen">
+                                    0 Comment
+                                </div></div>
+                        <div class="judul">{{post.judul}}</div><br>
+                        {{post.teks}}<br>
+                        <br> <br><br>
+                    </div>
+                </div>
+                {%endfor%}
+           
+           
+            </div>
     </div>
 
-
+   
             <footer1>
                     <div class="bannerfooter1">
                         <div class="container" style="margin: auto">
