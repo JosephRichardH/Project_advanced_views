@@ -6,4 +6,4 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Blog
-        fields = ('judul', 'teks','tanggal_dibuat')
+        fields = '__all__'

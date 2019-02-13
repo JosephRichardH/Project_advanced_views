@@ -9,15 +9,14 @@ def BlogPost(request):
 
 def input_post(request):
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
-            post.author = request.user
             post.save()
             return redirect(BlogPost)
     else:
         form = PostForm()
-    return render(request, 'post_new.html', {'form': form})
+        return render(request, 'post_new.html', {'form': form})
 
 def post_detail(request, post_id):
     Postingans = Blog.objects.get(pk=post_id)
