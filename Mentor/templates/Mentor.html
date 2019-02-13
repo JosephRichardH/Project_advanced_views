@@ -1,0 +1,108 @@
+{% load static %}
+
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Mentor.css' %}" type="text/css">
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <header>
+                <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom box-shadow" style="margin-bottom:0px"> 
+                        <h3 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+                        <nav class="my-2 my-md-0 mr-md-3">
+                                <a href="{% url 'Home'%}"><li= class="listnav" style="margin-left:10px;">HOME</li=></a>
+                                <a href="{% url 'Blog'%}"><li= class="listnav" style="margin-left:10px;">BLOG</li=></a>
+                                <a href="{% url 'Mentor'%}" id="nav-color"><li= class="listnav" style="margin-left:10px;">MENTOR</li=></a>
+                                <a href="{% url 'Mentee'%}"><li= class="listnav" style="margin-left:10px;">MENTEE</li=></a>
+                                <a href="{% url 'Author'%}"><li= class="listnav" style="margin-left:10px;">AUTHOR</li=></a>
+                        </nav>  
+                </div>
+                <div class="banner">
+                    <img class="profile" src="{% static 'images/alpha-logo.png' %}">
+                    <p class="title_header">Alphatech Academy</p>  
+                    <p class="content_header">
+                        Alphatech Academy is a tech talent incubator that gives everyone (even non-IT
+                        background) a chance to be a professional Tech Talent within 3 months. 
+                    </p>
+                    <p class="contact_header">Contact Person:</p>
+                    <p class="contact_header">Email: academy@alphatech.id</p>
+                    <p class="contact_header">Mobile Phone: 0877 9609 9530</p>
+                </div>
+            </header>
+
+            <div class="judulawal">Our Mentor</div>
+            <div class="container" style="margin-left:30px; margin-right:30px; padding-left: 100px; padding-right: 100px; margin-bottom:150px;">
+                    
+                    <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
+                            <div class="col-3">
+                        <img class="displaypicturesmall" src="{% static 'images/people-andreas.png' %}">
+                    </div>
+                    <div class="col-9"; style="margin-top:90px;text-align: left;">
+                        <h1>Andreas Nugroho</h1>
+                        <p> Software Ninja (5 years experience)</p><br>
+                        <p> "Great place to learn about programming. Come join us!"</p>
+                    </div>
+            </div>
+
+            <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
+                    <div class="col-3">
+                <img class="displaypicturesmall" src="{% static 'images/people-ramdhan.png' %}">
+            </div>
+            <div class="col-9"; style="margin-top:90px;text-align: left;">
+                    <h1>Ramdhan Hidayat</h1>
+                    <p> Master of Chaos (10 years experience)</p><br>
+                    <p> "We make this program with passion, hard work, and heart. Let's get rock with us!"</p>
+        </div>
+        </div>
+            
+        
+        <div class="row" style="margin-left: 30px;margin-right: 30px; padding-left: 100px; padding-right: 100px;">
+                <div class="col-3">
+            <img class="displaypicturesmall" src="{% static 'images/people-trimo.png' %}">
+        </div>
+        <div class="col-9"; style="margin-top:90px;text-align: left;">
+                <h1>Trimo Leksono</h1>
+                <p> Magician (8 years experience)</p><br>
+                <p> "The best place for who want to be a great IT Talent."</p>
+  </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+            <footer1>
+                    <div class="bannerfooter1">
+                        <div class="container" style="margin: auto">
+                                <div style="text-align: center;padding-left:200px;padding-right:200px;">
+                        <div class="gambar" >
+                            Our Product:
+                        </div>
+                        <div class="gambar">
+                            <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                        </div>
+                        <div class="gambar">    
+                            <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                        </div>
+                        <div class="gambar">
+                            <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </footer1>
+            <footer2>
+                    <div class="bannerfooter2">
+                        <div class="contentfooter2">Contact Person: 
+                            Mobile Phone: 0877 9609 9530 
+                            Email: <a href="">academy@alphatech.id</a></div> 
+                    </div>
+            </footer2>
+</body>
+</html>

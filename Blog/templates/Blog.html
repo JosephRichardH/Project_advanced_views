@@ -1,0 +1,104 @@
+{% load static %}
+
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Blog.css' %}" type="text/css">
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <header>
+                <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom box-shadow" style="margin-bottom:0px"> 
+                        <h3 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+                        <nav class="my-2 my-md-0 mr-md-3">
+                                <a href="{% url 'Home'%}"><li= class="listnav" style="margin-left:10px;">HOME</li=></a>
+                                <a href="{% url 'Blog'%}" id="nav-color"><li= class="listnav" style="margin-left:10px;">BLOG</li=></a>
+                                <a href="{% url 'Mentor'%}"><li= class="listnav" style="margin-left:10px;">MENTOR</li=></a>
+                                <a href="{% url 'Mentee'%}"><li= class="listnav" style="margin-left:10px;">MENTEE</li=></a>
+                                <a href="{% url 'Author'%}"><li= class="listnav" style="margin-left:10px;">AUTHOR</li=></a>
+                        </nav>  
+                </div>
+                <div class="banner">
+                    <img class="profile" src="{% static 'images/alpha-logo.png' %}">
+                    <p class="title_header">Alphatech Academy Blog</p>  
+                    <p class="content_header">
+                        Alphatech Academy is a tech talent incubator that gives everyone (even non-IT
+                        background) a chance to be a professional Tech Talent within 3 months. 
+                    </p>
+                    <p class="contact_header">Contact Person:</p>
+                    <p class="contact_header">Email: academy@alphatech.id</p>
+                    <p class="contact_header">Mobile Phone: 0877 9609 9530</p>
+                </div>
+            </header>
+    <!-- Posting Pertama -->
+    <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-bottom:50px;">
+            <img style="display:block;margin:auto" src="{% static 'images/kendala-sepulsa.jpg' %}">
+            <div id="tanggal" >
+                    September 25, 2018
+                <div class="komen">
+                    0 Comment
+                </div></div>
+                <br>
+            <div class="judul">Punya Kendala? Segera hubungi Customer Service Sepulsa!</div>
+            <div class="teks">
+                Bagi sepulsa, kepuasan pelanggan adalah yang utama. Kami senantiasa mendengarkan keluhan maupun 
+                 kendala yang kamu hadapi selama melakukan transaksi di Sepulsa. Umumnya, pelanggan Sepulsa menghadapi
+                 kendala sebagai berikut: Status Order Pending. Jika transaksi pembayaran sudah selesai, namun status 
+                 order kamu masih pendig dalam jangka waktu 15 menit, segera hubungi tim Customer Service dengan menyertakan 
+                 email...
+                 <br><br><br>
+                 <a href="">Baca Selengkapnya...</a>
+            </div>
+    </div>
+    <!-- Posting Kedua   -->
+    <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-bottom:150px;">
+            <img style="display:block;margin:auto" src="{% static 'images/sms.png' %}">
+            <div id="tanggal" >
+                    Agustus 14, 2018
+                <div class="komen">
+                    0 Comment
+                </div></div>
+                <br>
+            <div class="judul">OTP, Si Kode Rahasia nan Berbahaya</div>
+            <div class="teks">
+                Kemudahan dalam berbagai transaksi perbankan memang banyak memberikan keuntungan bagi nasabah.
+                 Bayangkan saja, aktivitas jual beli yang pada awalnya membutuhkan waktu dan tempat, 
+                 kini bisa dilakukan tanpa beranjak dari tempat duduk kamu dan pembayaran lunas dalam hitungan detik 
+                 dengan transaksi online. Namun, tanpa disadari, kemudahan tersebut bukan berarti tanpa celah. Sebelum
+                kita membahas lebih ....
+                <br><br><br>
+                <a href="">Baca Selengkapnya...</a>
+           </div>
+    </div>
+
+
+            <footer1>
+                    <div class="bannerfooter1">
+                        <div class="container" style="margin: auto">
+                                <div style="text-align: center;padding-left:200px;padding-right:200px;">
+                        <div class="gambar" >
+                            Our Product:
+                        </div>
+                        <div class="gambar">
+                            <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                        </div>
+                        <div class="gambar">    
+                            <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                        </div>
+                        <div class="gambar">
+                            <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </footer1>
+            <footer2>
+                    <div class="bannerfooter2">
+                        <div class="contentfooter2">Contact Person: 
+                            Mobile Phone: 0877 9609 9530 
+                            Email: <a href="">academy@alphatech.id</a></div> 
+                    </div>
+            </footer2>
+</body>
+</html>

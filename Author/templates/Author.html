@@ -1,0 +1,95 @@
+{% load static %}
+
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Author.css' %}" type="text/css">
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <header>
+                <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom box-shadow" style="margin-bottom:0px"> 
+                        <h3 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+                        <nav class="my-2 my-md-0 mr-md-3">
+                                <a href="{% url 'Home'%}"><li= class="listnav" style="margin-left:10px;">HOME</li=></a>
+                                <a href="{% url 'Blog'%}"><li= class="listnav" style="margin-left:10px;">BLOG</li=></a>
+                                <a href="{% url 'Mentor'%}"><li= class="listnav" style="margin-left:10px;">MENTOR</li=></a>
+                                <a href="{% url 'Mentee'%}"><li= class="listnav" style="margin-left:10px;">MENTEE</li=></a>
+                                <a href="{% url 'Author'%}" id="nav-color"><li= class="listnav" style="margin-left:10px;">AUTHOR</li=></a>
+                        </nav>  
+                </div>
+                <div class="banner">
+                    <img class="profile" src="{% static 'images/alpha-logo.png' %}">
+                    <p class="title_header">Alphatech Academy Blog</p>  
+                    <p class="content_header">
+                        Alphatech Academy is a tech talent incubator that gives everyone (even non-IT
+                        background) a chance to be a professional Tech Talent within 3 months. 
+                    </p>
+                    <p class="contact_header">Contact Person:</p>
+                    <p class="contact_header">Email: academy@alphatech.id</p>
+                    <p class="contact_header">Mobile Phone: 0877 9609 9530</p>
+                </div>
+            </header>
+
+            <div class="container" style="display:block;margin:auto; padding-left: 100px; padding-right: 100px; margin-bottom:50px;">
+                    <img style="display:block;margin:auto;margin-top: 50px;" src="{% static 'images/profile-pic2.jpg' %}">
+                    
+                    <div class="judul">Joseph Richard</div>
+                    <div class="teks">
+                        Hello all, I am one of the proud member of ATA Trainee di Alpha Tech Academy. 
+                        Wish me and you all be blessed everyday by God!
+                        <br><br>
+                        Alamat      : Darmo Permai Selatan VII/54 Surabaya
+                        <br><br>
+                        Telephone   : 0822-3-1111-310
+                        <br><br>
+                        Education   : Bachelor of Civil Engineering from Petra Christian University Surabaya
+                        <br><br>
+                        Proffesion  : ATA Trainee
+                        <br><br>
+                        Nationality : Indonesia
+                        <br><br>
+                        Company     : Sepulsa Teknologi Indonesia - Alterra Indonesia
+                        <br><br>
+                        Email       : joseph@alphatech.id
+                        <br><br>
+                        Adress      : Jalan Tidar 23, Malang, Jawa Timur, Indonesia
+                        <br><br>
+
+                    </div>
+            
+            <iframe style="margin:auto;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4698.936208264239!2d112.63288705054093!3d-7.965987675542828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1550020125563" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+
+
+            <footer1>
+                    <div class="bannerfooter1">
+                        <div class="container" style="margin: auto">
+                                <div style="text-align: center;padding-left:200px;padding-right:200px;">
+                        <div class="gambar" >
+                            Our Product:
+                        </div>
+                        <div class="gambar">
+                            <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                        </div>
+                        <div class="gambar">    
+                            <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                        </div>
+                        <div class="gambar">
+                            <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </footer1>
+            <footer2>
+                    <div class="bannerfooter2">
+                        <div class="contentfooter2">Contact Person: 
+                            Mobile Phone: 0877 9609 9530 
+                            Email: <a href="">academy@alphatech.id</a></div> 
+                    </div>
+            </footer2>
+</body>
+</html>
